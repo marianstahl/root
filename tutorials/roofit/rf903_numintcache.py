@@ -39,7 +39,7 @@ def getWorkspace(mode):
         # applied)
 
         # w.pdf("model").setNormValueCaching(3)
-        w.pdf("model").setStringAttribute("CACHEPARMINT", "x:y:z")
+        w.pdf("model").setStringAttribute("CACHEPARAMINT", "x:y:z")
 
         # Evaluate p.d.f. once to trigger filling of cache
         normSet = ROOT.RooArgSet(w.var("x"), w.var("y"), w.var("z"))

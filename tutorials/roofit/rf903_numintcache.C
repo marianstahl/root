@@ -108,7 +108,7 @@ RooWorkspace *getWorkspace(Int_t mode)
       // in subsequent fitting and plotting operations (interpolation is applied)
 
       // w->pdf("model")->setNormValueCaching(3) ;
-      w->pdf("model")->setStringAttribute("CACHEPARMINT", "x:y:z");
+      w->pdf("model")->setStringAttribute("CACHEPARAMINT", "x:y:z");
 
       // Evaluate p.d.f. once to trigger filling of cache
       RooArgSet normSet(*w->var("x"), *w->var("y"), *w->var("z"));
